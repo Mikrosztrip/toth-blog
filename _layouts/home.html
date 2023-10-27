@@ -5,22 +5,64 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-<!--<h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>-->
 <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-        </a>
-    </h3>
-    {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-    {%- endif -%}
-    </li>
-    {%- endfor -%}
+  {%- for post in site.posts -%}
+  <li>
+    <article class="blog-post"> 
+      <h3>
+        <i class="fa-solid fa-quote-left"></i>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h3>
+      <span class="blog-post-meta">
+          <time class="dt-published" itemprop="datePublished">
+          {{ post.date | date: "%-d %B %Y" }}
+          </time>
+      </span>
+      
+    </article>
+    
+  <!--<span class="post-meta">{{ post.date | date: date_format }}</span>
+  <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+      {{ post.title | escape }}
+      </a>
+  </h3>
+  <p class="blog-post-meta">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" itemprop="datePublished">
+        {{ page.date | date: "%-d %B %Y" }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+  </p>
+  {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+  {%- endif -%}
+  </li>-->
+  {%- endfor -%}
 </ul>
 
 {%- endif -%}
+
+
+<header class="post-header">
+    <h1 class="blog-post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="blog-post-meta">
+      <time class="dt-published" itemprop="datePublished">
+        {{ page.date | date: "%-d %B %Y" }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+  </p>
+  </header>
+
+  <article class="blog-post">
+    <h2 class="blog-post-title">Sample blog post</h2>
+    <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+    <hr>
+    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+  </article>

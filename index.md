@@ -7,5 +7,3 @@ title: Home
 navbar_order: 1
 navbar_visible: true
 ---
-
-Hello World

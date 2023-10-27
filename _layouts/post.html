@@ -7,9 +7,9 @@ layout: default
       <h1 class="blog-post-title" itemprop="name headline">{{ page.title | escape }}</h1>
       <p class="blog-post-meta">
         <time class="dt-published" itemprop="datePublished">
-          {{ page.date | date: "%-d %B %Y" }}
+            {{ page.date | date: "%-d %B %Y" }}
         </time>
-        {%- if page.author -%}
+        {%- if page.author -%}sdf
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
         {%- endif -%}
     </p>
