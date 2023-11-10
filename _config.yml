@@ -43,6 +43,17 @@ feed_show_tags: true
 # Add a search button to the navbar
 post_search: true
 
+lsi: false
+safe: true
+source: .
+destination: _site
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 
 # --- Footer social media links --- #
@@ -111,7 +122,6 @@ footer-hover-col: "#0085A1"
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/Berlin"
-#highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 

@@ -8,7 +8,9 @@
 {% if page.categories contains "cooking" %}
 <div class="cooking">
 {% elsif page.categories contains "math" %}
-<div class="cooking">
+<div class="math">
+{% elsif page.categories contains "project management" %}
+<div class="project_management">
 {% else %}
 <div>
 {% endif %}
@@ -29,7 +31,7 @@
   ></div>
 {% endif %}
 
-<header class="header-section {% if page.cover-img %}has-img{% endif %}">
+<header class="header-section {% if page.cover-img %}has-img{% endif %} pb-3">
 {% if page.cover-img %}
 <div class="big-img intro-header">
   <div class="container-md">

@@ -1,0 +1,28 @@
+
+.cooking {
+    color: #0098D4; /* Bavarian Blue */
+    font-size: 20px;
+  }
+    
+.cooking h1,
+.cooking h2,
+.cooking h3 {
+    font-family: 'Caveat', cursive;
+}
+
+.cooking .content {
+    /*border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);*/
+}
+
+.math .content{
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, lightgrey 1px, transparent 1px),
+      linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+}
+
+.red{
+    color: red;
+}

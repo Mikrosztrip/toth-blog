@@ -4,8 +4,8 @@ layout: minimal
 
 {% include post_header.html type="post" %}
 
-<div class="content container-fluid">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row content">
     <div class="col-10 offset-md-1">
       {% if page.before-content %}
         <div class="before-content">
@@ -18,7 +18,10 @@ layout: minimal
       <article role="main" class="blog-post">
         {{ content }}
       </article>
-
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 offset-md-1">
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>
