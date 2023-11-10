@@ -23,6 +23,26 @@
       linear-gradient(to bottom, lightgrey 1px, transparent 1px);
 }
 
-.red{
+red{
     color: red;
+}
+
+blue{
+    color: blue;
+}
+
+green{
+    color: green;
+}
+
+purple{
+    color: purple;
+}
+
+yellow{
+    color: yellow;
+}
+
+lightgreen{
+    color: lightgreen;
 }

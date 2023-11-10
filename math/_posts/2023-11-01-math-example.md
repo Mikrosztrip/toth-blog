@@ -5,16 +5,23 @@ thumbnail-img: /assets/img/math_thumbnail.jpg
 tags: [equations]
 ---
 
-Basic tutorial for <span class="red">MathJax</span> can be [found here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+Basic tutorial for <red>MathJax</red> can be [found here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.
 
-{: .red :}
-A single paragraph can be red. But also single words like above.
 
+<red>A single paragraph can be red. But also single words like above.</red>
+
+#### Nach dem Komma die Bruchteile:
+- Zentel (<purple>z</purple>)
+- Hundertstel (<red>h</red>),
+    - Tausendstel (<green>t</green>),
+    - Zehn-Tausendstel (<lightgreen>zt</lightgreen>),
+- Hundert-Tausendstel (<yellow>ht</yellow>),
+- Millionstel (<blue>m</blue>).
 
 ## The Lorenz Equations
-You can use the LaTex Syntax 
+You can use the LaTex Syntax (Those can also be generated [here](https://latex.codecogs.com/eqneditor/editor.php))
 
 \begin{align}
 \dot{x} &amp; = \sigma(y-x) \\
