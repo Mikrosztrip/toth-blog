@@ -1,39 +1,58 @@
 ---
-layout: default
+layout: minimal
 ---
-<article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <header class="post-header">
-      <h1 class="blog-post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="blog-post-meta">
-        <time class="dt-published" itemprop="datePublished">
-            {{ page.date | date: "%-d %B %Y" }}
-        </time>
-        {%- if page.author -%}sdf
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-        {%- endif -%}
-    </p>
-    </header>
-  
-    <div class="post-content e-content" itemprop="articleBody">
-      {{ content }}
+{% include post_header.html type="post" %}
+
+<div class="content container-fluid">
+  <div class="row">
+    <div class="col-10 offset-md-1">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <article role="main" class="blog-post">
+        {{ content }}
+      </article>
+
+      {% if page.tags.size > 0 %}
+        <div class="blog-tags">
+          <span>Tags:</span>
+          {% for tag in page.tags %}
+            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.social-share %}
+        {% include social-share.html %}
+      {% endif %}
+
+      <ul class="pagination blog-pager">
+        {% if page.previous.url %}
+        <li class="page-item previous">
+          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous Post</a>
+        </li>
+        {% endif %}
+        {% if page.next.url %}
+        <li class="page-item next">
+          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next Post &rarr;</a>
+        </li>
+        {% endif %}
+      </ul>
     </div>
-  
-    {%- if site.disqus.shortname -%}
-      {%- include disqus_comments.html -%}
-    {%- endif -%}
-  
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  </article>
-
-
-<!--
-  <article class="blog-post">
-    <h2 class="blog-post-title">Another blog post</h2>
-    <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
-
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <blockquote>
-      <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-    </blockquote>
-  </article>-->
+  </div>
+</div>
+</div> <!-- page category div -->

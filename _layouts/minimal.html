@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang='{{ page.lang | default: site.lang | default: "en" }}'>
+
+{%- include head.html -%}
+<body>
+  {%- include script.html -%}
+  <div class="container overflow-hidden">
+    {%- include header.html -%}
+    <div class="row">
+      <div class="col">
+      {{ content }}
+      </div>
+    </div>
+    {%- include footer.html -%}
+  </div>
+</body> 
+</html>
