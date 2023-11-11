@@ -9,6 +9,9 @@ Basic tutorial for <red>MathJax</red> can be [found here](https://math.meta.stac
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.
 
+further LaTeX References:
++ https://en.wikibooks.org/wiki/LaTeX/Mathematics
++ https://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf
 
 <red>A single paragraph can be red. But also single words like above.</red>
 

@@ -1,7 +1,6 @@
 ---
 title: My Vintage Recipes
 subtitle: Cooking up memories, one recipe at a time
-cover-img: /assets/img/kitchen_banner.png
 thumbnail-img: /assets/img/cooking_thumb.png
 tags: [bake, vegan]
 ---

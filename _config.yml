@@ -122,7 +122,7 @@ footer-hover-col: "#0085A1"
 
 # Output options (more information on Jekyll's site)
 timezone: "Europe/Berlin"
-permalink: /:year-:month-:day-:title/
+#permalink: /:year-:month-:day-:title/
 paginate: 5
 
 defaults:
@@ -131,6 +131,22 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "math/*"
+      type: "posts"
+    values:
+      cover-img: /assets/img/math_banner.jpg
+      thumbnail-img: /assets/img/math_thumbnail.jpg
+  - scope:
+      path: "cooking/*"
+      type: "posts"
+    values:
+      cover-img: /assets/img/kitchen_banner.png
+  - scope:
+      path: "project management/*"
+      type: "posts"
+    values:
+      cover-img: /assets/img/project_banner.png
 
 # Build settings
 plugins:
