@@ -1,0 +1,10 @@
+site:
+  name: Dein cooler Blog
+  description: >- # this means to ignore newlines until "langs:"
+    Gestalte diese Sektion um deinen Besuchers etwas über deine Veröffentlichungen,
+    Authoren, Inhalt oder etwas komplett anderes. Wie es dir gefällt.
+    Du kannst diese Zeile in i18n/de.yml anpassen.
+    Sie wird auch im RSS Feed und Google Suchen angezeigt.
+langs:
+  en: Englisch
+  de: Deutsch

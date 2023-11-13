@@ -18,20 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# Shown in RSS Feed
-title: Your awesome title
-
 # Your name to show in the footer
 author: Some Person
-description: >- # this means to ignore newlines until "baseurl:"
-  Customize this section to tell your visitors a little bit about your publication, 
-  writers, content, or something else entirely. Totally up to you. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-
+languages: ["de", "en"] # hu later
+exclude_from_localizations: ["assets"] 
 
 show_excerpts: true
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
@@ -152,6 +145,7 @@ defaults:
 plugins:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-multiple-languages-plugin
 
 
 # Exclude from processing.
