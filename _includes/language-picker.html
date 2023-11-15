@@ -6,12 +6,12 @@
         {% if lang == "de" %}
             {% capture link1 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
             <li class="dropdown-item">
-                <a href="{{ link1 }}" class="nav-link"><span class="flag-icon flag-icon-{{site.translations[lang].flag-code }}"></span> {% t global.de %}</a>
+                <a href="{{ link1 }}" class="nav-link"><span class="flag-icon flag-icon-{{ site.flag.de }}"></span> {% t global.de %}</a>
             </li>
         {% elsif lang == "en" %}
             {% capture link2 %}{{ site.baseurl_root }}/en{{ page.url  }}{% endcapture %}
             <li class="dropdown-item">
-                <a href="{{ link2 }}" class="nav-link"><span class="flag-icon flag-icon-{{site.translations[lang].flag-code }}"></span> {% t global.en %}</a>
+                <a href="{{ link2 }}" class="nav-link"><span class="flag-icon flag-icon-{{ site.flag.en }}"></span> {% t global.en %}</a>
             </li>
         {% endif %}
     {% endfor %}
