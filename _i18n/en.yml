@@ -10,3 +10,5 @@ global:
   en: English
   de: German
 flag-code: gb
+page-titles:
+  about: "About me"
