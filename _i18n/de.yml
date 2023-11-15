@@ -5,6 +5,7 @@ site:
     Authoren, Inhalt oder etwas komplett anderes. Wie es dir gefällt.
     Du kannst diese Zeile in i18n/de.yml anpassen.
     Sie wird auch im RSS Feed und Google Suchen angezeigt.
-langs:
+global:
   en: Englisch
   de: Deutsch
+flag-code: de

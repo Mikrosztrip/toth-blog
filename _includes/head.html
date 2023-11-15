@@ -52,7 +52,7 @@
   {%- if page.cover-img -%}
   <style>
     .intro-header.big-img {
-      background-image: url('{{ site.baseurl }}{{ page.cover-img }}');
+      background-image: url('{{ page.cover-img | prepend: site.baseurl_root}}');
     }
   </style>
   {% endif %}
