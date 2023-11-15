@@ -28,14 +28,14 @@ layout: default
       {% if thumbnail != "" %}
       <!--should not be here -->
       <div class="post-image post-image-normal">
-      <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+      <a href="{{ site.baseurl }}{{ post.url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
       </a>
       </div>
       {% endif %}
       {% endif %}
 
-      <a href="{{ post.url | absolute_url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
       <h2 class="post-title">{{ post.title | strip_html }}</h2>
 
       {% if post.subtitle %}
@@ -69,7 +69,7 @@ layout: default
         {% if thumbnail != "" %}
         <!-- unless does not work -->
         <div class="post-image post-image-short">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+        <a href="{{ site.baseurl }}{{ post.url }}" aria-label="Thumbnail">
             <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
         </a>
         </div>
