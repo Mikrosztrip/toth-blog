@@ -125,21 +125,24 @@ defaults:
     values:
       layout: "post"
   - scope:
-      path: "math/*"
+      path: "_i18n/*/_posts/math/*"
       type: "posts"
     values:
+      categories: ["math"]
       cover-img: /assets/img/math_banner.jpg
       thumbnail-img: /assets/img/math_thumbnail.jpg
   - scope:
-      path: "cooking/*"
+      path: "_i18n/*/_posts/cooking/*"
       type: "posts"
     values:
       cover-img: /assets/img/kitchen_banner.png
+      categories: ["cooking"]
   - scope:
-      path: "project management/*"
+      path: "_i18n/*/_posts/project management/*"
       type: "posts"
     values:
       cover-img: /assets/img/project_banner.png
+      categories: ["project management"]
 
 # Build settings
 plugins:

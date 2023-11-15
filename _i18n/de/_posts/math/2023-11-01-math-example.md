@@ -1,12 +1,12 @@
 ---
-title: A Math Example
+title: Ein Beispiel für Mathematik
 cover-img: /assets/img/math_banner.jpg
 thumbnail-img: /assets/img/math_thumbnail.jpg
 tags: [equations]
 ---
 
-Basic tutorial for <red>MathJax</red> can be [found here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+Eine Grundlegende Anleitung für <red>MathJax</red> kann man [hier finden](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+Wenn $a \ne 0$, dann gibt es zwei Lösungen für \(ax^2 + bx + c = 0\) und diese sind
 $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$.
 
 further LaTeX References:
