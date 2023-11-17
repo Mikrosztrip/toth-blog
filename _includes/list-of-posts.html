@@ -1,10 +1,3 @@
----
-layout: default
----
-
-{{ content }}
-
-
 {%- if site.posts.size > 0 -%}
   {% assign posts = paginator.posts | default: site.posts %}
   <div class="posts-list">

@@ -8,5 +8,14 @@ site:
 global:
   en: Englisch
   de: Deutsch
-page-titles:
-  about: "Über mich"
+  introduction: Einführung
+  index:
+    math:
+      title: Mathematik
+      subtitle: Die Natur ist in der Sprache der Mathematik geschrieben
+    gastronomy:
+      title: Gastronomie
+      subtitle: Immer lecker
+    project-mgmt:
+      title: Projekt Management
+      subtitle: Planung, ein Diagramm nach dem anderen
