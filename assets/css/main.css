@@ -1094,3 +1094,20 @@ pre {
     display: inline-block;
   }
 }
+
+.thumbnail {
+  height: 9rem;
+  width: 9rem;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  height: 100%;
+  max-width: none;
+}
+
+@media (min-width: 1200px) {
+  .thumbnail {
+    margin-top: -2.1875rem;
+  }
+}

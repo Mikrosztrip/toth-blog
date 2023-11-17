@@ -9,5 +9,14 @@ site:
 global:
   en: English
   de: German
-page-titles:
-  about: "About me"
+  introduction: Introduction
+  index:
+    math:
+      title: Mathematic 
+      subtitle: Pure mathematics is, in its way, the poetry of logical ideas.
+    gastronomy:
+      title: Gastronomy
+      subtitle: always tasty
+    project-mgmt:
+      title: Project management
+      subtitle: Planning and diagrams
