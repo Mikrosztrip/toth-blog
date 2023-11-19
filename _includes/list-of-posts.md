@@ -1,5 +1,4 @@
-{%- if site.posts.size > 0 -%}
-  {% assign posts = paginator.posts | default: site.posts %}
+{%- if paginator.posts > 0 -%}
   <div class="posts-list">
   {% for post in paginator.posts %}
     <article class="post-preview">

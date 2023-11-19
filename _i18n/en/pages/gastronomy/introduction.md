@@ -12,4 +12,4 @@ eu, pretium quis, sem. Nulla consequatenim Donec pede justo,
 fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
 imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
-<!-- unterhalb werden die Blog Beiträge in zeitlich absteigener Ordnung angezeigt. -->
+<!-- down below are the blog entries ordered from new to oldest -->

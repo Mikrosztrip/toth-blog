@@ -5,11 +5,12 @@ permalink: /gastronomy/
 navbar_order: 3
 navbar_visible: true
 pagination: 
-  enabled: false
+  enabled: true
   category: gastronomy
-  permalink: '/gastronomy/:num/'
+  permalink: '/:num/'
 ---
 
 {%- translate_file pages/gastronomy/introduction.md -%}
 
-{%- include list-of-posts.html -%}
+{%- include paginator-v2.html -%}
+
