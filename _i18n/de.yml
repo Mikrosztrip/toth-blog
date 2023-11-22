@@ -8,6 +8,8 @@ site:
 global:
   en: Englisch
   de: Deutsch
+  previous: Vorherige Beiträge
+  newer: Neuere Beiträge
   introduction: Einführung
   index:
     math:

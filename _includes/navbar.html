@@ -11,10 +11,17 @@
         {% assign sorted_pages = site.pages | sort:"navbar_order" %}
         {% for node in sorted_pages %}
           {% if node.navbar_visible %}
-            {% if page.url == node.url %}
-              <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
-            {% else %}
-              <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+          <!--
+            my_page.autogen is populated by the pagination logic for all pages
+            that are automatically created by the gem. 
+            Check for non-existence to exclude pagination pages from site.pages iterators
+          -->
+            {% if node.title and node.autogen == nil %}
+              {% if page.url == node.url %}
+                <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+              {% else %}
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+              {% endif %}
             {% endif %}
           {% endif %}
         {% endfor %}

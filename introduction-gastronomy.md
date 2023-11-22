@@ -8,6 +8,7 @@ pagination:
   enabled: true
   category: gastronomy
   permalink: '/:num/'
+  per_page: 2
 ---
 
 {%- translate_file pages/gastronomy/introduction.md -%}

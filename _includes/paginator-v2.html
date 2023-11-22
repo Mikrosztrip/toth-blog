@@ -36,7 +36,7 @@
       </div>
     {% endif %}
       
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span class="post-meta">{% include localize-date.html %}</span>
     {% if site.show_excerpts == true %}
       <div class="post-entry">
         {% assign excerpt_length = site.excerpt_length | default: 50 %}
@@ -55,3 +55,21 @@
   </article>
 {% endfor %}
 </div>
+
+  <!-- 
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+  -->
+  {% if paginator.total_pages > 1 %}
+    <ul class="pagination main-pager">
+      {% if paginator.previous_page %}
+      <li class="page-item previous">
+        <a class="page-link" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">&larr; {% translate global.newer %}</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="page-item next">
+        <a class="page-link" href="{{ site.baseurl }}{{ paginator.next_page_path }}">{% translate global.previous %} &rarr;</a>
+      </li>
+      {% endif %}
+    </ul>
+  {% endif %}
