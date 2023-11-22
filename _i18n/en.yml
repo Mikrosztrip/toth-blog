@@ -12,6 +12,13 @@ global:
   previous: Older Posts
   newer: Newer Posts
   introduction: Introduction
+  navbar:
+    home: Home
+    about: About me
+    gastronomy: Gastronomy
+    math: Mathematic
+    project-mgmt: Project management
+    imprint: Imprint
   index:
     math:
       title: Mathematic 

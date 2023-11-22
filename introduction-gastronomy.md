@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gastronomy
+title: global.navbar.gastronomy
 permalink: /gastronomy/
 navbar_order: 3
 navbar_visible: true

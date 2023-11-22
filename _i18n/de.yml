@@ -11,6 +11,13 @@ global:
   previous: Vorherige Beiträge
   newer: Neuere Beiträge
   introduction: Einführung
+  navbar:
+    home: Start
+    about: Über mich
+    gastronomy: Gastronomie
+    math: Mathematik
+    project-mgmt: Projekt Management
+    imprint: Impressum
   index:
     math:
       title: Mathematik

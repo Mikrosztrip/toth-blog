@@ -18,9 +18,9 @@
           -->
             {% if node.title and node.autogen == nil %}
               {% if page.url == node.url %}
-                <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+                <li class="nav-item active"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{% translate node.title %}</a></li>
               {% else %}
-                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}{{node.url}}">{% translate node.title %}</a></li>
               {% endif %}
             {% endif %}
           {% endif %}
