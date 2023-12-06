@@ -29,3 +29,13 @@ global:
     project-mgmt:
       title: Project management
       subtitle: Planning and diagrams
+  math:
+    chapter-1:
+      index: Chapter 1 - Geometry
+      part-1: Part 1 - Squares
+    chapter-2:
+      index: Chapter 2 - Decimals
+      part-1: Part 1 - Estimations
+    chapter-3:
+      index: Chapter 3 - Fractions
+      part-1: Part 1 - Branches

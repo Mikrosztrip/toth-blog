@@ -1,0 +1,13 @@
+{% assign minLevel = include.minLevel %}
+{% if minLevel == nil %}{% assign minLevel = 1 %}{% endif %}
+
+<div class="breadcrumb">
+{% assign documents = site.pages | where: "isDoc", true | sort: "weight" %}
+{% include get-parents.html page=page minLevel=minLevel docs=documents %}
+<p>{{ page.title }}</p>
+</div>
+
+<style type="text/css">
+.breadcrumb p { display: inline; }
+.breadcrumb p+p+p:before { content:"» "; }
+</style>

@@ -5,7 +5,7 @@
           <h5 class="card-title">{% t global.index.gastronomy.title %}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{% t global.index.gastronomy.subtitle %}</h6>
           <div class="thumbnail float-end">
-            <img src="{{ site.baseurl_root }}{{ page.math-thumbnail }}" class="rounded" alt="...">
+            <img src="{{ site.baseurl_root }}{{ page.gastronomy-thumbnail }}" class="rounded" alt="...">
           </div>  
           <p class="card-text">
             {% translate_file pages/index/introduction-gastronomy.md %}
@@ -22,12 +22,12 @@
         <h5 class="card-title">{% t global.index.math.title %}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{% t global.index.math.subtitle %}</h6>
           <div class="thumbnail float-end">
-            <img src="{{ site.baseurl_root }}{{ page.gastronomy-thumbnail }}" class="rounded" alt="...">
+            <img src="{{ site.baseurl_root }}{{ page.math-thumbnail }}" class="rounded" alt="...">
           </div>  
           <p class="card-text">
             {% translate_file pages/index/introduction-math.md %}
           </p>
-          <a href="#" class="btn btn-primary">{% t global.introduction %}</a>
+          <a href="{{ site.baseurl }}/math/" class="btn btn-primary">{% t global.introduction %}</a>
       </div>
     </div>
   </div>

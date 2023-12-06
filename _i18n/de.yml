@@ -28,3 +28,13 @@ global:
     project-mgmt:
       title: Projekt Management
       subtitle: Planung, ein Diagramm nach dem anderen
+  math:
+    chapter-1:
+      index: Kapitel 1 - Geometrie
+      part-1: Teil 1 - Quadrate
+    chapter-2:
+      index: Kapitel 2 - Decimals
+      part-1: Teil 1 - Estimations
+    chapter-3:
+      index: Kapitel 3 - Fractions
+      part-1: Teil 1 - Branches
