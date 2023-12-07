@@ -164,6 +164,11 @@ pagination:
 # by the category names and it doesn't understand multi-categories to well :/
 permalink: pretty
 
+collections:
+  math:
+    output: true
+    sort_by: lesson
+
 ############################################################
 
 defaults:
